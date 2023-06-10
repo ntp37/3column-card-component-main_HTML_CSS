@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);  /* primary */
+    --Dark-cyan: hsl(184, 100%, 22%);  /* primary */
+    --Very-dark-cyan: hsl(179, 100%, 13%);  /* primary */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Very-light-gray);
+}
+.main {
+    display: flex;
+    width: 1440px;
+    margin: auto 18%;
+    overflow: hidden;
+}
+.main img {
+    margin: 40px auto 30px 40px;
+}
+.main h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    margin-left: 40px;
+}
+.main p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--Transparent-white);
+    line-height: 1.8;
+    margin: 30px 55px auto 40px;
+}
+.main button {
+    background-color: var(--Very-light-gray);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 145px;
+    height: 45px;
+    margin: 95px auto 45px 40px;
+}
+.card-left {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+    width: 33%;
+}
+.card-left button {
+    color: var(--Bright-orange);
+}
+.card-center {
+    background-color: var(--Dark-cyan);
+    width: 33%;
+}
+.card-center button {
+    color: var(--Dark-cyan);
+}
+.card-right {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+    width: 34%;
+}
+.card-right button {
+    color: var(--Very-dark-cyan);
+}
+@media (min-width: 1530px) and (max-width: 1920px) {
+    .main p {
+        margin: 30px 30px auto 40px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .main {
+        display: grid;
+        width: 375px;
+        height: auto;
+        margin: auto 7%;
+        padding: 70px 0 70px;
+    }
+    .main button {
+        margin: 25px auto 45px 40px;
+    }
+    .main div {
+        width: 100%;
+        height: auto;
+    }
+    .card-left {
+        border-radius: 10px 10px 0 0;
+    }
+    .card-right {
+        border-radius: 0 0 10px 10px;
+    }
+}
